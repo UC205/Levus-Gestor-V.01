@@ -138,9 +138,5 @@ while True:
             y = (1 - alpha) * current_y + alpha * yIndex
             mouse.position = (x, y)
 
-    cv.imshow('Camera', frame)
-    if cv.waitKey(1) & 0xFF == ord('q'):
-        break
-
 cap.release()
 cv.destroyAllWindows()
